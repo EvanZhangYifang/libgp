@@ -4,3 +4,6 @@
 
 ADD_EXECUTABLE(gpdense gp_example_dense.cc)
 TARGET_LINK_LIBRARIES(gpdense gp)
+
+ADD_EXECUTABLE(gp_calib gp_calib.cpp)
+TARGET_LINK_LIBRARIES(gp_calib gp)
