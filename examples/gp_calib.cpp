@@ -8,12 +8,12 @@
 int main(int argc, char const *argv[])
 {
     int dim = 6;
-    int data_size = 1000;
+    int data_size = 250;
     std::string input_data;
     libgp::GaussianProcess gp(dim, "CovSum ( CovSEiso, CovNoise)");
     // initialize hyper parameter vector
     Eigen::VectorXd params(gp.covf().get_param_dim());
-    params << log(391.2473830698102), 0.0, 0.0;
+    params << log(393.06638572782197), 0.0, 0.0;
     // set parameters of covariance function
     gp.covf().set_loghyper(params);
 
