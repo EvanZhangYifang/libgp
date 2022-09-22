@@ -1,0 +1,1 @@
+/usr/bin/c++  -DCLSQUARE -Wall -O2 -fPIC  -rdynamic CMakeFiles/gp_calib.dir/gp_calib.cpp.o  -o gp_calib  ../libgp.a 

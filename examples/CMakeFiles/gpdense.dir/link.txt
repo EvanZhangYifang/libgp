@@ -1,0 +1,1 @@
+/usr/bin/c++  -DCLSQUARE -Wall -O2 -fPIC  -rdynamic CMakeFiles/gpdense.dir/gp_example_dense.cc.o  -o gpdense  ../libgp.a 
