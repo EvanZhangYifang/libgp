@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
     libgp::GaussianProcess gp(dim, "CovSum ( CovSEiso, CovNoise)");
     // initialize hyper parameter vector
     Eigen::VectorXd params(gp.covf().get_param_dim());
-    params << log(393.06638572782197), 0.0, 0.0;
+    params << log(395.59847137695357), 0.0, 0.0;
     // set parameters of covariance function
     gp.covf().set_loghyper(params);
 
@@ -41,7 +41,7 @@ int main(int argc, char const *argv[])
 
     // add training patterns
     auto code_start = std::chrono::system_clock::now();
-    std::ifstream data_testing("/home/embedded/exo_muscle_ws/src/libgp/examples/data_training.txt");
+    std::ifstream data_testing("/home/embedded/exo_muscle_ws/src/libgp/examples/data_testing.txt");
     if (data_testing.is_open())
     {
         for (int i = 0; i < data_size; ++i)
